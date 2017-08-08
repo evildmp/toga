@@ -30,20 +30,27 @@ Here's a complete code listing for our "Hello world" app::
         main().main_loop()
 
 
-Lets walk through this one line at a time.
+Let's walk through this one line at a time.
 
 The code starts with imports. First, we import toga::
 
     import toga
 
-Then, we set up a handler - a wrapper around behavior that we want to activate
+Then, we set up a handler function, ``button_handler()``, containing the
+behaviour (``print("hello")``) that we want to activate::
+
+    def button_handler(widget):
+        print("hello")
+
+This function takes an argument (``widget``), specifying the widget that will
+be used to  
+
+ - a wrapper around behavior that we want to activate
 when the button is pressed. A handler is just a function. The function takes
 the widget that was activated as the first argument; depending on the type of
 event that is being handled, other arguments may also be provided. In the case
 of a simple button press, however, there are no extra arguments::
 
-    def button_handler(widget):
-        print("hello")
 
 By creating an app, we're declaring that we want to have a main window, with a
 main menu. However, Toga doesn't know what content we want in that main

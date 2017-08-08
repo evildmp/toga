@@ -1,6 +1,8 @@
-==============
-Toga internals
-==============
+.. _project:
+
+=================
+About the project
+=================
 
 .. toctree::
    :maxdepth: 2
@@ -9,4 +11,3 @@ Toga internals
    contributing
    releases
    roadmap
-   platforms
